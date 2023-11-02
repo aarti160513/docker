@@ -6,7 +6,7 @@ RUN adduser -D ansible
 USER ansible 
 WORKDIR /home/ansible
 
-RUN python -m pip install --user ansible 
+RUN python -m pip install --user --no-cache-dir  ansible 
 
 ENV PATH=.local/bin:$PATH
 
